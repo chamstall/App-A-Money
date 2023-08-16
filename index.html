@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Chams Money</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center py-3">
+        <div class="col-6 ">
+            <h2 class="pb-4 text-center ">Bienvenue sur A-Money</h2>
+            <div class="card p-2 p-md-5 ">
+                <h4 class="text-center pb-3 text-light">veuillez saisir une option</h4>
+                <div class="mb-3 ">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-2">
+                            <input type="number" class="form-control" id="input1" placeholder="Saisir l'option">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <button type="button" class="btn btn-warning  " id="entrer1">Entrer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="options d-flex flex-column ">
+                    <p>0-Solde de mon compte</p>
+                    <p>1-Transfert d'argent</p>
+                    <p>2-Paiement de facture</p>
+                    <p>3-Achats de credit</p>
+                    <p>4-Quitter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card  d-none firstcard">
+        </div>
+        <div class="card d-none secondcard ">
+            <p>Saisir le montant à transférer en $</p>
+            <div class=" d-flex justify-content-center">
+                <input type="number" class="form-control w-50 form-control-sm " id="input2" placeholder="Saisir le montant du transfert">
+                <button type="button" class="btn btn-warning ms-2 btn-sm " id="entrer2">Entrer</button>
+                <!-- <button type="button" class="btn btn-warning ms-2" id="entrer1">Entrer</button> -->
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-warning btn-sm mt-2 w-100 " id="leave1">Quitter</button>
+            </div>
+        </div>
+        <div class="card my-2 d-none thirdcard">
+            <p>Quel type de paiement souhaiter vous ?</p>
+            <div class="options-facture d-flex flex-column ">
+                <p>0-Liquide</p>
+                <p>1-Chèque</p>
+            </div>
+            <div class=" d-flex justify-content-center">
+                <input type="number" class="form-control w-50 form-control-sm " id="input3" placeholder="saisisez ici!">
+                <button type="button" class="btn btn-warning ms-2 btn-sm " id="entrer3">Entrer</button>
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-warning btn-sm mt-2 w-100 " id="leave2">Quitter</button>
+            </div>
+        </div>
+        <div class="card my-2 d-none fourthcard">
+            <p>Veillez saisir le numéro et le montant du credit </p>
+            <p>NB: le numéro doit contenir 9 chiffres</p>
+            <div class=" d-flex flex-column">
+                <input type="number" class="form-control  form-control-sm mb-1" id="input4" placeholder="Numéro !">
+                <input type="number" class="form-control  form-control-sm mb-1" id="input5" placeholder="Montant !">
+                <button type="button" class="btn btn-warning  btn-sm " id="entrer4">Entrer</button>
+                <button type="button" class="btn btn-warning btn-sm mt-2 w-100 " id="leave3">Quitter</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
