@@ -19,9 +19,6 @@ entrer1.addEventListener("click", (e) => {
         thirdCard.classList.add("d-none");
         fourthCard.classList.add("d-none");
     }
-    else {
-        alert("good!");
-    }
     if (input.value === "0") {
         secondCard.classList.add("d-none");
         thirdCard.classList.add("d-none");
@@ -67,7 +64,7 @@ entrer2.addEventListener("click", (e) => {
         do {
             nbDestinataire = prompt("veuillez saisir le numero du destinataire!\n Nb: Le numéro saisi doit comporter 9 chiffres");
         } while (isNaN(nbDestinataire) || nbDestinataire.length !== 9)
-        alert(`Vous avez envoyer "${input2.value} $" au "${nbDestinataire}" avec succès . \n Votre nouveau solde est de "${solde - input2.value} $"`)
+        alert(`Vous avez transférer "${input2.value} $" au "${nbDestinataire}" avec succès . \n Votre nouveau solde est de "${solde - input2.value} $"`)
     }
     solde -= input2.value;
     input2.value = "";
