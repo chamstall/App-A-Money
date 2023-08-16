@@ -1,6 +1,17 @@
 *{
     font-family:'Trevuchet MS';
 }
+.card-principal{
+    animation : slideUp 2s ease-out forwards;
+}
+@keyframes slideUp{
+    from{
+        transform: translateY(70px);
+    }
+    to{
+        transform: translateY(-20px);
+    }
+}
 .card{
     background-color: rgba(000,000,000,0.2);
     max-width: 800px;
